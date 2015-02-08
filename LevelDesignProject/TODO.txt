@@ -1,0 +1,20 @@
+Geom
+Lighting
+Generator Assault
+Helicopter Assault
+
+3D skybox
+Descent navmesh
+Cliff Displacement
+Destroy Bridge
+
+Alyx AI - talking
+
+
+
+Fix water - leaches or ladder
+
+env_fog_controller
+fix shack nav mesh - entering locked room and getting stuck
+
+autosave points
