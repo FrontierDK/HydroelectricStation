@@ -1,10 +1,14 @@
-Lighting - polish
-Helicopter Assault
+Helicopter Assault - need the crash site and final gate
 3D skybox
 Descent navmesh
 Cliff Displacement
+
+Lighting - polish
 Destroy Bridge
 Alyx AI - talking
 Fix water - leaches or ladder
+add collion to dam rails
+generator building detail geometry
 env_fog_controller
 autosave points
+giant pipe geometry
