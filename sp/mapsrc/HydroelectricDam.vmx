@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "385"
+	"mapversion" "390"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "16"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "385"
+	"mapversion" "390"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -47771,8 +47771,8 @@ entity
 	"GlowProxySize" "2.0"
 	"HDRColorScale" "1.0"
 	"HorizontalGlowSize" "30"
-	"MaxDist" "2000"
-	"MinDist" "1000"
+	"MaxDist" "5000"
+	"MinDist" "2000"
 	"rendercolor" "174 228 255 50"
 	"VerticalGlowSize" "30"
 	"origin" "-2864 8368 1680"
@@ -47931,7 +47931,7 @@ entity
 	"classname" "assault_assaultpoint"
 	"angles" "0 0 0"
 	"assaulttimeout" "3.0"
-	"assaulttolerance" "36"
+	"assaulttolerance" "120"
 	"targetname" "patrol_assault_point"
 	"origin" "-8519.26 5804.35 2697"
 	editor
@@ -79206,17 +79206,34 @@ entity
 entity
 {
 	"id" "43192"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 0 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/effects/vol_light128x256.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
 	"skin" "0"
 	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
 	"origin" "-1632 6944 800"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 4500]"
@@ -79225,17 +79242,34 @@ entity
 entity
 {
 	"id" "43242"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 0 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/effects/vol_light128x256.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
 	"skin" "0"
 	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
 	"origin" "-1344 6944 800"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 4500]"
@@ -79244,17 +79278,34 @@ entity
 entity
 {
 	"id" "43246"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 0 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/effects/vol_light128x256.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
 	"skin" "0"
 	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
 	"origin" "-1056 6944 800"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 4500]"
@@ -110789,13 +110840,14 @@ entity
 {
 	"id" "56624"
 	"classname" "trigger_once"
-	"origin" "384 7600 400"
+	"origin" "400 7664 400"
 	"spawnflags" "3"
 	"StartDisabled" "0"
 	"targetname" "heli_crash_trigger"
 	connections
 	{
 		"OnStartTouch" "towerfall_logic,Trigger,,0,-1"
+		"OnStartTouch" "heli,SelfDestruct,,2.5,-1"
 	}
 	solid
 	{
@@ -110803,7 +110855,7 @@ entity
 		side
 		{
 			"id" "26574"
-			"plane" "(-128 7136 672) (-128 8064 672) (896 8064 672)"
+			"plane" "(-32 7264 672) (-32 8064 672) (832 8064 672)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -110814,7 +110866,7 @@ entity
 		side
 		{
 			"id" "26573"
-			"plane" "(-128 8064 128) (-128 7136 128) (896 7136 128)"
+			"plane" "(-32 8064 128) (-32 7264 128) (832 7264 128)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -110825,7 +110877,7 @@ entity
 		side
 		{
 			"id" "26572"
-			"plane" "(-128 7136 128) (-128 8064 128) (-128 8064 672)"
+			"plane" "(-32 7264 128) (-32 8064 128) (-32 8064 672)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -110836,7 +110888,7 @@ entity
 		side
 		{
 			"id" "26571"
-			"plane" "(896 8064 128) (896 7136 128) (896 7136 672)"
+			"plane" "(832 8064 128) (832 7264 128) (832 7264 672)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -110847,7 +110899,7 @@ entity
 		side
 		{
 			"id" "26570"
-			"plane" "(-128 8064 128) (896 8064 128) (896 8064 672)"
+			"plane" "(-32 8064 128) (832 8064 128) (832 8064 672)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -110858,7 +110910,7 @@ entity
 		side
 		{
 			"id" "26569"
-			"plane" "(896 7136 128) (-128 7136 128) (-128 7136 672)"
+			"plane" "(832 7264 128) (-32 7264 128) (-32 7264 672)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -110983,7 +111035,7 @@ entity
 	"radius" "100"
 	"target" "helo_approach_path1"
 	"targetname" "helo_approach_path"
-	"origin" "-2560 5728 608"
+	"origin" "-2560 5616 608"
 	editor
 	{
 		"color" "255 192 0"
@@ -111001,7 +111053,7 @@ entity
 	"radius" "100"
 	"target" "helo_approach_path2"
 	"targetname" "helo_approach_path1"
-	"origin" "-1536 5728 544"
+	"origin" "-1536 5616 544"
 	editor
 	{
 		"color" "255 192 0"
@@ -111019,7 +111071,7 @@ entity
 	"radius" "100"
 	"target" "helo_approach_path4"
 	"targetname" "helo_approach_path2"
-	"origin" "-960 5824 608"
+	"origin" "-960 5712 608"
 	editor
 	{
 		"color" "255 192 0"
@@ -111037,7 +111089,7 @@ entity
 	"radius" "100"
 	"target" "helo_approach_path5"
 	"targetname" "helo_approach_path4"
-	"origin" "-384 5952 352"
+	"origin" "-384 5840 352"
 	editor
 	{
 		"color" "255 192 0"
@@ -111065,62 +111117,6 @@ entity
 }
 entity
 {
-	"id" "61719"
-	"classname" "info_node_air"
-	"nodeid" "632"
-	"origin" "-5376 5504 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "61721"
-	"classname" "info_node_air"
-	"nodeid" "633"
-	"origin" "-4864 5632 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "61723"
-	"classname" "info_node_air"
-	"nodeid" "634"
-	"origin" "-4352 5760 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "61725"
-	"classname" "info_node_air"
-	"nodeid" "635"
-	"origin" "-3968 5376 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
 	"id" "61727"
 	"classname" "info_node_air"
 	"nodeid" "636"
@@ -111135,20 +111131,6 @@ entity
 }
 entity
 {
-	"id" "61729"
-	"classname" "info_node_air"
-	"nodeid" "637"
-	"origin" "-3456 5504 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
 	"id" "61731"
 	"classname" "info_node_air"
 	"nodeid" "638"
@@ -111159,20 +111141,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
-	"id" "61733"
-	"classname" "info_node_air"
-	"nodeid" "639"
-	"origin" "-2816 5504 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
 	}
 }
 entity
@@ -111261,104 +111229,6 @@ entity
 }
 entity
 {
-	"id" "61747"
-	"classname" "info_node_air"
-	"nodeid" "646"
-	"origin" "-4992 5248 512"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7000]"
-	}
-}
-entity
-{
-	"id" "61749"
-	"classname" "info_node_air"
-	"nodeid" "647"
-	"origin" "-4608 5376 768"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7500]"
-	}
-}
-entity
-{
-	"id" "61751"
-	"classname" "info_node_air"
-	"nodeid" "648"
-	"origin" "-5632 5376 768"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8000]"
-	}
-}
-entity
-{
-	"id" "61753"
-	"classname" "info_node_air"
-	"nodeid" "649"
-	"origin" "-5632 5376 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "61755"
-	"classname" "info_node_air"
-	"nodeid" "650"
-	"origin" "-6400 5888 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9000]"
-	}
-}
-entity
-{
-	"id" "61757"
-	"classname" "info_node_air"
-	"nodeid" "651"
-	"origin" "-6656 6400 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "61759"
-	"classname" "info_node_air"
-	"nodeid" "652"
-	"origin" "-7040 6784 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 10000]"
-	}
-}
-entity
-{
 	"id" "61761"
 	"classname" "info_node_air"
 	"nodeid" "653"
@@ -111373,38 +111243,11 @@ entity
 }
 entity
 {
-	"id" "61763"
-	"classname" "info_node_air"
-	"nodeid" "654"
-	"origin" "-256 5504 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 11000]"
-	}
-}
-entity
-{
-	"id" "61765"
-	"classname" "info_node_air"
-	"nodeid" "655"
-	"origin" "-1024 5504 1152"
-	editor
-	{
-		"color" "232 171 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 11500]"
-	}
-}
-entity
-{
 	"id" "61773"
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "128"
 	"target" "heli_courtyard_path1"
 	"targetname" "heli_courtyard_path"
 	"origin" "192 7168 384"
@@ -111422,6 +111265,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "128"
 	"target" "heli_courtyard_path2"
 	"targetname" "heli_courtyard_path1"
 	"origin" "-128 6272 384"
@@ -111439,6 +111283,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path3"
 	"targetname" "heli_courtyard_path2"
 	"origin" "-256 5760 640"
@@ -111456,6 +111301,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path4"
 	"targetname" "heli_courtyard_path3"
 	"origin" "384 6144 384"
@@ -111473,6 +111319,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path5"
 	"targetname" "heli_courtyard_path4"
 	"origin" "768 6784 256"
@@ -111490,6 +111337,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path6"
 	"targetname" "heli_courtyard_path5"
 	"origin" "640 5760 384"
@@ -111507,6 +111355,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "128"
 	"target" "heli_courtyard_path7"
 	"targetname" "heli_courtyard_path6"
 	"origin" "384 6528 640"
@@ -111524,6 +111373,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path8"
 	"targetname" "heli_courtyard_path7"
 	"origin" "1152 6912 640"
@@ -111541,6 +111391,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path9"
 	"targetname" "heli_courtyard_path8"
 	"origin" "1024 6016 384"
@@ -111558,6 +111409,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path10"
 	"targetname" "heli_courtyard_path9"
 	"origin" "1536 6528 640"
@@ -111575,6 +111427,7 @@ entity
 	"classname" "path_track"
 	"angles" "0 180 0"
 	"orientationtype" "2"
+	"radius" "256"
 	"target" "heli_courtyard_path"
 	"targetname" "heli_courtyard_path10"
 	"origin" "1408 7040 384"
@@ -112899,15 +112752,15 @@ entity
 	"id" "66752"
 	"classname" "npc_heli_avoidbox"
 	"angles" "0 0 0"
-	"origin" "-1296 7120 384"
-	"spawnflags" "0"
+	"origin" "-1312 7168 384"
+	"spawnflags" "65536"
 	solid
 	{
 		"id" "66750"
 		side
 		{
 			"id" "26610"
-			"plane" "(-2048 7968 736) (-544 7968 736) (-544 6272 736)"
+			"plane" "(-2048 6368 736) (-2048 7968 736) (-576 7968 736)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -112918,7 +112771,7 @@ entity
 		side
 		{
 			"id" "26609"
-			"plane" "(-2048 6272 32) (-544 6272 32) (-544 7968 32)"
+			"plane" "(-2048 7968 32) (-2048 6368 32) (-576 6368 32)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -112929,7 +112782,7 @@ entity
 		side
 		{
 			"id" "26608"
-			"plane" "(-2048 7968 736) (-2048 6272 736) (-2048 6272 32)"
+			"plane" "(-2048 6368 32) (-2048 7968 32) (-2048 7968 736)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -112940,7 +112793,7 @@ entity
 		side
 		{
 			"id" "26607"
-			"plane" "(-544 7968 32) (-544 6272 32) (-544 6272 736)"
+			"plane" "(-576 7968 32) (-576 6368 32) (-576 6368 736)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -112951,7 +112804,7 @@ entity
 		side
 		{
 			"id" "26606"
-			"plane" "(-544 7968 736) (-2048 7968 736) (-2048 7968 32)"
+			"plane" "(-2048 7968 32) (-576 7968 32) (-576 7968 736)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -112962,7 +112815,7 @@ entity
 		side
 		{
 			"id" "26605"
-			"plane" "(-544 6272 32) (-2048 6272 32) (-2048 6272 736)"
+			"plane" "(-576 6368 32) (-2048 6368 32) (-2048 6368 736)"
 			"material" "TOOLS/TOOLSDOTTED"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -113397,7 +113250,7 @@ entity
 	"classname" "func_smokevolume"
 	"Color1" "222 233 190"
 	"Color2" "253 244 185"
-	"Density" "0.25"
+	"Density" "1"
 	"DensityRampSpeed" "1"
 	"material" "particle/particle_smokegrenade"
 	"MovementSpeed" "20"
@@ -113645,8 +113498,8 @@ cameras
 	}
 	camera
 	{
-		"position" "[655.747 4110.04 1266.18]"
-		"look" "[339.714 5699.12 705.762]"
+		"position" "[-491.964 5463.18 1303.86]"
+		"look" "[-1089.34 3889.77 1630.38]"
 	}
 }
 cordon

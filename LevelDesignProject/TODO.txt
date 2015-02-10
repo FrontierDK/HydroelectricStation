@@ -8,7 +8,6 @@ Lighting - polish
 Alyx AI - talking - find shotgun
 Fix water - leaches or ladder
 add collion to dam rails - bridge railings model?
-huladoll to control room
 generator building detail geometry
 env_fog_controller
 autosave points
