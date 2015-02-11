@@ -1,5 +1,3 @@
-Helicopter Assault - need the crash site and final gate
-Cliff Displacement
 3D skybox
 Descent navmesh
 Destroy Bridge
@@ -10,8 +8,5 @@ Fix water - leaches or ladder
 add collion to dam rails - bridge railings model?
 generator building detail geometry
 env_fog_controller
-autosave points
 giant pipe geometry
 ladders from the lower section of the generator room
-limit heli triggers to the helicopter
-
