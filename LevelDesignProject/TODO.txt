@@ -1,10 +1,9 @@
-3D skybox
-Destroy Bridge
+Alyx AI - talking - find shotgun
+
+env_speaker
+soundscapes
 
 Lighting - polish
-Alyx AI - talking - find shotgun
-Fix water - leaches or ladder
-add collion to dam rails - bridge railings model?
 generator building detail geometry
-giant pipe geometry
-ladders from the lower section of the generator room - ladder light
+Destroy Bridge
+add some manhacks
