@@ -154,5 +154,5 @@
 #include "talker/npc_alyx_episodic.txt"
 #include "talker/npc_alyx_episodic_scenes.txt"
 //#include "talker/npc_barney_episodic.txt"
-#include "talker/nags_Alyx.txt"
+#include "talker/nags_alyx.txt"
 #include "talker/npc_alyx_vehicle.txt"

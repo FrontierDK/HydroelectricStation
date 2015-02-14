@@ -54,3 +54,5 @@ config.cfg
 # shader files
 *.tmp
 
+# Sounds are just to big to check in :(
+/sp/game/mod_hydrodam/sound/

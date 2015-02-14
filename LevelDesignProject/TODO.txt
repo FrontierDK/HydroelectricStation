@@ -1,9 +1,22 @@
-Alyx AI - talking - find shotgun
+* soundscapes - done just need to verify - control room is broke maybe?  Back door needs to transition faster
+fix 3D skybox
+nav_mesh at the end of the level
+fix nav mesh bugs
+fix static mesh bugs
 
-env_speaker
-soundscapes
+too dark?
+fix Alyx dying in ambush
+close up or use the final tunnel
 
-Lighting - polish
-generator building detail geometry
+add some manhacks and make Alyx afraid of the helicopter
+
+Alyx AI - talking - find shotgun, cliff sequence, point at bridge
+
+outflow pipes
 Destroy Bridge
-add some manhacks
+
+concrete detailing - blend on the dam
+
+generator building detail geometry
+Lighting - polish
+
