@@ -65,9 +65,9 @@ rule AlyxEnemyDead
 
 response AlyxHideAndReload
 {
-//	scene "scenes/npc/Alyx/coverme01.vcd"
-//	scene "scenes/npc/Alyx/coverme02.vcd"
-//   scene "scenes/npc/Alyx/coverme03.vcd" 
+	scene "scenes/npc/Alyx/coverme01.vcd"
+	scene "scenes/npc/Alyx/coverme02.vcd"
+	scene "scenes/npc/Alyx/coverme03.vcd" 
 }
 
 rule AlyxHideAndReload
@@ -78,9 +78,9 @@ rule AlyxHideAndReload
 
 response AlyxTalkPlayerPushed
 {
-//	scene "scenes/npc/Alyx/excuseme01.vcd"
-//	scene "scenes/npc/Alyx/excuseme02.vcd"
-//   scene "scenes/npc/Alyx/excuseme03.vcd" 
+	scene "scenes/npc/Alyx/excuseme01.vcd"
+	scene "scenes/npc/Alyx/excuseme02.vcd"
+  	scene "scenes/npc/Alyx/excuseme03.vcd" 
 }
 
 rule AlyxTalkPlayerPushed

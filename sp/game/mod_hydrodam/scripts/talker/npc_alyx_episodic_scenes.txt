@@ -596,7 +596,7 @@ response "AlyxSpottedZombieWaking"
 }
 rule AlyxSpottedZombieWaking
 {
-	criteria 	IsAlyx ConceptSpottedZombieWakeup  IsMap_ep2_outland_01 NotAlyxSawZombies
+	criteria 	IsAlyx ConceptSpottedZombieWakeup NotAlyxSawZombies
 	response	AlyxSpottedZombieWaking
 }
 

@@ -76,8 +76,8 @@ game_sounds_manifest
 
 	//Added manually Andrew
 	"precache_file"		"scripts/npc_sounds_alyx_episodic2.txt"
-	"precache_file"		"scripts/npc_sounds_attackheli_episodic2"
-	"precache_file"		"scripts/npc_sounds_alyx_episodic"
+	"precache_file"		"scripts/npc_sounds_attackheli_episodic2.txt"
+	"precache_file"		"scripts/npc_sounds_alyx_episodic.txt"
 	"precache_file"		"scripts/game_sounds_weapons_ep2.txt"
 	"precache_file"		"scripts/game_sounds_addendum_ep2.txt"
 	"precache_file"		"scripts/game_sounds_physics_ep2.txt"
@@ -87,4 +87,7 @@ game_sounds_manifest
 	"precache_file"		"scripts/level_sounds_outland_episodic.txt"
 	"precache_file"		"scripts/level_voices_episode_02.txt"
 	"precache_file"		"scripts/npc_sounds_fastzombie_episodic2.txt"
+	"precache_file"		"scripts/level_voices_episode_02.txt"
+	"precache_file"		"scripts/level_voices_episode_01.txt"
+	"precache_file"		"scripts/level_sounds_music_hydroelectric.txt"
 }

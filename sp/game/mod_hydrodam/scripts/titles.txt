@@ -192,7 +192,7 @@ $position -1 0.65
 
 GAMESAVING
 {
-#HL2_Saving
+Saving
 }
 
 // In-Game messages
@@ -226,7 +226,7 @@ $position -1 0.65
 
 GAMESAVED
 {
-#HL2_Saved
+Saved
 }
 
 $clearmessage 0
