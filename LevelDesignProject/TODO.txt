@@ -1,6 +1,6 @@
-concrete detailing - blend on the dam
+concrete detailing - alpha blend dirt on the dam
 generator building detail geometry
 Lighting - polish
 outflow pipes
-Destroy Bridge
+Open the Dam and Destroy Bridge
 

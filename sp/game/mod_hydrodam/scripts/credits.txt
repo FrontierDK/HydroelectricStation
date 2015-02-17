@@ -14,7 +14,7 @@
 
 "CreditsParams"
 {
-	"logo" "HALF-LIFE'"
+	"logo" "HALF-LIFE 2"
 	"logo2" "== Hydroelectric Dam Mod =="
 
 	"fadeintime"	"2.5"
@@ -38,7 +38,7 @@
 //========================================================
 "OutroCreditsNames"
 {
-	"HALF-LIFE'" "ClientTitleFont"
+	"HALF-LIFE 2" "ClientTitleFont"
 	"== Hydroelectric Dam Mod ==" "HDRDemoText"
 	" "	"HDRDemoText"
 	" "	"HDRDemoText"

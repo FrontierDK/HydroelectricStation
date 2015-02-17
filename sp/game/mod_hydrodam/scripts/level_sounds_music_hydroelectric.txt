@@ -50,10 +50,10 @@
 "ambush_song0"				// -2db
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.50000"
+	"volume"		"0.60000"
 	"pitch"			"100"
 
-	"soundlevel"	"0"
+	"soundlevel"		"SNDLVL_90dB"
 
 	"wave"			"*#music/vlvx_song12.mp3"
 }
